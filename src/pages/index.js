@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Header from "../components/Header"
+import Header from "../components/Header";
 import Banner from "../components/Banner";
 import ProductFeed from "../components/ProductFeed";
 
@@ -7,10 +7,11 @@ export default function Home({ products }) {
   return (
     <div className="bg-gray-100">
       <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
         <title>Amazon 2.0</title>
       </Head>
 
-      <Header/>
+      <Header />
 
       <main className="max-w-screen-2xl mx-auto">
         {/* Banner */}
@@ -28,9 +29,9 @@ export async function getServerSideProps(context) {
     (res) => res.json()
   );
 
-  return { 
+  return {
     props: {
       products,
     },
-  }
+  };
 }

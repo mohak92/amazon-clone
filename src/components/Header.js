@@ -10,7 +10,7 @@ function Header() {
   return (
     <header>
       {/* Top Nav */}
-      <div className="flex items-center bg-amazon_blue p-1 flex-grow py-2">
+      <div className="flex items-center bg-amazon_blue p-1 flex-grow py-2 flex-wrap">
         <div className="mt-2 flex items-center flex-grow sm:flex-grow-0">
           <Image
             src="https://links.papareact.com/f90"
@@ -26,7 +26,7 @@ function Header() {
                 <LocationMarkerIcon className="h-5" />
                 <p className="font-extrabold md:text-sm">Select your address</p>
               </div>
-            </div>
+            </div> 
           </div>
         </div>
 
@@ -64,7 +64,7 @@ function Header() {
       </div>
 
       {/* Bottom Nav */}
-      <div className="flex items-center space-x-5 p-2 pl-6 bg-amazon_blue-light text-white text-sm">
+      <div className="flex items-center space-x-3 p-2 pl-6 bg-amazon_blue-light text-white text-sm">
         <p className="link flex items-center">
           <MenuIcon className="h-6 mr-1" />
           All
